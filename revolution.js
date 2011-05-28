@@ -46,7 +46,7 @@ var Revolution = function() {
   that.fire_phrase = function(position) {
     var bundle = that.audio_phrases[position];
     $('#phrase').text(bundle[1]);
-    bundle[2].play();
+    // bundle[2].play();
   }
 
 
