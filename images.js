@@ -16,5 +16,6 @@ images = [
   'http://farm3.static.flickr.com/2701/4303149612_fb4e32d938_b.jpg',
   'http://weneedahero.files.wordpress.com/2011/02/revolution.jpg',
   'http://4.bp.blogspot.com/_uR3TIG-KkBw/S_arszkAhrI/AAAAAAAAAq0/AVAN7qScvS0/s1600/Photo+Gil-Scott+Heron+HDef.jpg',
+  'http://inapcache.boston.com/universal/site_graphics/blogs/bigpicture/egyptthewait_2011/bp11.jpg',
   'http://www.vashtie.com/blog/wp-content/uploads/2011/02/jan_26_gil_scott_heron.jpg'
 ];
