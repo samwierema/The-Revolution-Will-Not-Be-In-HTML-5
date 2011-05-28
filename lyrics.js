@@ -3,7 +3,7 @@ lyrics = [
 [12600, "You will not be able to stay home, brother."],
 [5450, "You will not be able to plug in, turn on and cop out."],
 [4050, "You will not be able to lose yourself on skag and skip out for beer during commercials,"],
-[4300, "Because the revolution will not be televised."],
+[4300, "because the revolution will not be televised."],
 
 [5550, "The revolution will not be televised."],
 [1850, "The revolution will not be brought to you by Xerox in 4 parts without commercial interruptions."],
@@ -24,8 +24,7 @@ lyrics = [
 [5000, "There will be no pictures of Whitney Young being run out of Harlem on a rail with a brand new process."],
 [5000, "There will be no slow motion or still life of Roy Wilkens strolling through Watts in a Red, Black and Green liberation jumpsuit that he had been saving for just the proper occasion."],
 
-[5000, "Green Acres, The Beverly Hillbillies, and Hooterville"],
-[5000, "Junction will no longer be so damned relevant, and women will not care if Dick finally gets down with Jane on Search for Tomorrow because Black people will be in the street looking for a brighter day."],
+[5000, "Green Acres, The Beverly Hillbillies, and Hooterville Junction will no longer be so damned relevant, and women will not care if Dick finally gets down with Jane on Search for Tomorrow because Black people will be in the street looking for a brighter day."],
 [5000, "The revolution will not be televised."],
 
 [5000, "There will be no highlights on the eleven o'clock news and no pictures of hairy armed women liberationists and Jackie Onassis blowing her nose."],
