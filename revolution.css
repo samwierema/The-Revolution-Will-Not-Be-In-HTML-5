@@ -53,15 +53,14 @@ img.bg {
   left: 0;
 }
 
-#phrase {
+div#phrase {
   position: absolute;
-  font-size: 40px;
-  font-weight: bold;
-  color: red;
+  width: 800px;
   padding: 4px;
-  background-color: gray;
-  opacity: 0.8;
-  width: 300px;
+  font-family: 'Old Standard TT', sans-serif;
+  font-size: 46px;
+  color: white;
+  text-shadow: 0px 0px 8px black;
 }
 
 @media screen and (max-width: 1024px) { /* Specific to this particular image */

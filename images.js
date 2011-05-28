@@ -1,0 +1,20 @@
+images = [
+  'http://farm4.static.flickr.com/3380/4623984022_264c623238_b.jpg',
+  'http://farm6.static.flickr.com/5132/5466441167_dbe2b9146c_b.jpg',
+  'http://farm5.static.flickr.com/4115/4741633578_db145f0246_b.jpg',
+  'http://farm5.static.flickr.com/4131/4997208860_efb3e76db0_b.jpg',
+  'http://farm4.static.flickr.com/3434/3885176039_f35ac1681d_b.jpg',
+  'http://farm5.static.flickr.com/4149/5011192967_a8955344ce_b.jpg',
+  'http://farm3.static.flickr.com/2536/3833773724_e9b0cfc253_b.jpg',
+  'http://farm5.static.flickr.com/4061/4578488251_9ec068fdb9_b.jpg',
+  'http://farm4.static.flickr.com/3149/2418223976_45cea93246_b.jpg',
+  'http://farm3.static.flickr.com/2667/5768203041_963e9b41db_b.jpg',
+  'http://farm4.static.flickr.com/3371/4604468382_f34a1620c5_o.jpg',
+  'http://farm1.static.flickr.com/86/264577294_f8ef90bff4_o.jpg',
+  'http://farm3.static.flickr.com/2311/1957121921_a5e7afec7a_b.jpg',
+  'http://sinistersaladmusikal.files.wordpress.com/2010/10/100_5615.jpg',
+  'http://farm3.static.flickr.com/2701/4303149612_fb4e32d938_b.jpg',
+  'http://weneedahero.files.wordpress.com/2011/02/revolution.jpg',
+  'http://4.bp.blogspot.com/_uR3TIG-KkBw/S_arszkAhrI/AAAAAAAAAq0/AVAN7qScvS0/s1600/Photo+Gil-Scott+Heron+HDef.jpg',
+  'http://www.vashtie.com/blog/wp-content/uploads/2011/02/jan_26_gil_scott_heron.jpg'
+];

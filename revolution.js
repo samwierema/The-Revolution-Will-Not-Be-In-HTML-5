@@ -8,7 +8,7 @@ $(document).ready(function() {
     $('#title').fadeIn(1000);
   }, 6000);
   window.setTimeout(function() {
-    //$('#title').fadeOut(1000);
+    $('#title').fadeOut(1000);
   }, 11200)
 });
 
@@ -22,17 +22,12 @@ var Revolution = function() {
   }
   
   that.preload_images = function() {
-    $.getJSON('http://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=53fc02bccf3f3dfd4c135ed595f688e0&gallery_id=25241199-72157626699534155&format=json&nojsoncallback=1', function(data) {
-      that.images = [];
-      $.each(data.photos.photo, function(key, photo) {
-        var image = 'http://farm' + photo.farm  + '.static.flickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_b.jpg';
-        that.images.push(image);
-        $('<img />').attr('src', image).addClass('hidden bg revolution' + key).load(function() {
-          if(key == 0) {
-            $(this).removeClass('hidden');
-          }
-          $('body').append($(this));
-        });
+    $.each(images, function(key, image) {
+      $('<img />').attr('src', image).addClass('hidden bg revolution' + key).load(function() {
+        if(key == 0) {
+          $(this).removeClass('hidden');
+        }
+        $('body').append($(this));
       });
     });
   }
@@ -73,7 +68,7 @@ var Revolution = function() {
   that.fire_phrase = function(position) {
     var bundle = that.audio_phrases[position];
     $('img.revolution' + position).fadeOut('slow');
-    $('img.revolution' + (position+1)).fadeIn('slow');
+    $('img.revolution' + (position+1)).fadeIn('fast');
     $('#phrase').css('left', '-1000px');
     $('#phrase').text(bundle[1]);
     var left = Math.floor((Math.random() * ($('body').width() - $('#phrase').width() - 10)));
