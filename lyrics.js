@@ -3,7 +3,7 @@ lyrics = [
 [13000, "You will not be able to stay home, brother."],
 [5000, "You will not be able to plug in, turn on and cop out."],
 [5000, "You will not be able to lose yourself on skag and skip out for beer during commercials,"],
-[5000, "Because the revolution will not be televised."],
+[5000, "because the revolution will not be televised."],
 
 [5000, "The revolution will not be televised."],
 [4000, "The revolution will not be brought to you by Xerox in 4 parts without commercial interruptions."],

@@ -40,6 +40,16 @@ img.bg {
   width: 300px;
 }
 
+.tweet {
+  position: absolute;
+  color: black;
+  opacity: 0.8;
+  width: 300px;
+  font-size: 20px;
+  padding: 4px;
+  background-color: gray;
+}
+
 @media screen and (max-width: 1024px) { /* Specific to this particular image */
   img.bg {
     left: 50%;
