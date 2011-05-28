@@ -1,6 +1,15 @@
 $(document).ready(function() {
   revolution = Revolution();
   revolution.init();
+  window.setTimeout(function() {
+    $('#introduction').fadeOut(1000);
+  }, 5000);
+  window.setTimeout(function(){
+    $('#title').fadeIn(1000);
+  }, 6000);
+  window.setTimeout(function() {
+    //$('#title').fadeOut(1000);
+  }, 11200)
 });
 
 var Revolution = function() {
@@ -34,9 +43,9 @@ var Revolution = function() {
     that.audio.load();
     $(that.audio).bind('play', that.fire_audio_phrases);
     
-    that.audio.controls = 'controls';
-    $('#player').append(that.audio);
-    //that.audio.play();
+    //that.audio.controls = 'controls';
+    //$('#player').append(that.audio);
+    that.audio.play();
   };
 
   that.preload_mp3s = function() {
@@ -62,8 +71,10 @@ var Revolution = function() {
 
   that.fire_phrase = function(position) {
     var bundle = that.audio_phrases[position];
+    $('img.revolution' + position).fadeOut('slow');
+    $('img.revolution' + (position+1)).fadeIn('slow');
     $('#phrase').text(bundle[1]);
-    //bundle[2].play();
+    bundle[2].play();
   }
 
 

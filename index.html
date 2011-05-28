@@ -3,13 +3,25 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
 		<script src="revolution.js"></script>
 		<script src="lyrics.js"></script>
+		<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald|Old+Standard+TT&subset=latin">
 		<link rel="stylesheet" type="text/css" href="revolution.css" />
 	</head>
 	<body>
 	  <div id="content">
-	    <h1>The Revolution Will Not Be In HTML 5</h1>
+	    <div id="introduction">
+	      <a href="https://twitter.com/#!/marcelcorso" target="_blank">@marcelcorso</a> and <a href="https://twitter.com/#!/samwierema" target="_blank">@samwierema</a><br />
+	      <span class="smaller">present</span>
+	    </div>
+	    <div id="title" class="hidden">
+	      <h1>The Revolution Will Not Be In HTML 5</h1>
+	    </div>
 	    <div id="phrase"></div>
-	    <div id="player"></div>
+	    <div id="credits" class="hidden">
+	      <a onclick="window.reload();">
+	        Play again?<br />
+	        <img src="images/reload.png" width="" height="" alt="" title="" />
+	      </a>
+	    </div>
 	  </div>
 	</body>
 </html>
