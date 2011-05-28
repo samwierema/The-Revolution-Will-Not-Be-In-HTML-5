@@ -16,6 +16,9 @@ var Revolution = function() {
     that.audio.src = 'audio/the-revolution-will-not-be-televized.mp3';
     that.audio.load();
     $(that.audio).bind('play', that.fire_audio_phrases);
+    
+    that.audio.controls = 'controls';
+    $('#player').append(that.audio);
     that.audio.play();
   };
 
@@ -34,9 +37,9 @@ var Revolution = function() {
 
 
   that.fire_audio_phrases = function() { 
+    var timestamp = 0;
     for(var i = 0; i < that.audio_phrases.length; i++) {
-      var timestamp = 3 * that.audio_phrases[i][0];
-      setTimeout("revolution.fire_phrase(" + i + ")", timestamp);
+      setTimeout("revolution.fire_phrase(" + i + ")", timestamp += that.audio_phrases[i][0]);
     }
   };
 
