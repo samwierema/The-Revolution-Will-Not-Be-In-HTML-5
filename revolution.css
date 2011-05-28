@@ -1,0 +1,7 @@
+html {
+  background: url(http://farm4.static.flickr.com/3380/4623984022_264c623238_b.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
