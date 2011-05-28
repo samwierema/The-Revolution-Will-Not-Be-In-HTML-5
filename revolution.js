@@ -43,8 +43,8 @@ var Revolution = function() {
     that.audio.load();
     $(that.audio).bind('play', that.fire_audio_phrases);
     
-    that.audio.controls = 'controls';
-    $('#player').append(that.audio);
+    //that.audio.controls = 'controls';
+    //$('#player').append(that.audio);
     that.audio.play();
   };
 
@@ -54,9 +54,10 @@ var Revolution = function() {
     for(var i = 0; i < lyrics.length; i++) {
       var timestamp = lyrics[i][0];
       var phrase = lyrics[i][1]
-      var a = document.createElement('audio');
-      a.src = 'http://translate.google.com/translate_tts?tl=en&q=' + escape(phrase);
-      a.load();
+      var a = '';
+      //var a = document.createElement('audio');
+      //a.src = 'http://translate.google.com/translate_tts?tl=en&q=' + escape(phrase);
+      //a.load();
       that.audio_phrases.push([timestamp, phrase, a]);
     }
   };
@@ -79,7 +80,7 @@ var Revolution = function() {
     var top = Math.floor((Math.random() * ($('body').height() - $('#phrase').height())) - 15);
     $('#phrase').css('left', left + 'px');
     $('#phrase').css('top', top + 'px');
-    bundle[2].play();
+    //bundle[2].play();
   }
 
 
