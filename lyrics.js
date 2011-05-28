@@ -6,7 +6,7 @@ lyrics = [
 [5000, "Because the revolution will not be televised."],
 
 [5000, "The revolution will not be televised."],
-[5000, "The revolution will not be brought to you by Xerox in 4 parts without commercial interruptions."],
+[4000, "The revolution will not be brought to you by Xerox in 4 parts without commercial interruptions."],
 [5000, "The revolution will not show you pictures of Nixon blowing a bugle and leading a charge by John Mitchell, General Abrams and Spiro Agnew to eat hog maws confiscated from a Harlem sanctuary."],
 [5000, "The revolution will not be televised."],
 

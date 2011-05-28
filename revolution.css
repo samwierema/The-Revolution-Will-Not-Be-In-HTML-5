@@ -1,3 +1,7 @@
+body {
+  font-family: "Helvetica";
+}
+
 .hidden {
   display: none;
 }
@@ -23,6 +27,17 @@ img.bg {
   position: fixed;
   top: 0;
   left: 0;
+}
+
+#phrase {
+  position: absolute;
+  font-size: 40px;
+  font-weight: bold;
+  color: red;
+  padding: 4px;
+  background-color: gray;
+  opacity: 0.8;
+  width: 300px;
 }
 
 @media screen and (max-width: 1024px) { /* Specific to this particular image */

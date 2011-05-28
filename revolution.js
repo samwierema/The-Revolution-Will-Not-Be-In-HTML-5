@@ -36,7 +36,7 @@ var Revolution = function() {
     
     that.audio.controls = 'controls';
     $('#player').append(that.audio);
-    //that.audio.play();
+    that.audio.play();
   };
 
   that.preload_mp3s = function() {
@@ -62,8 +62,15 @@ var Revolution = function() {
 
   that.fire_phrase = function(position) {
     var bundle = that.audio_phrases[position];
+    // show the phrase somewhere on the page
+    $('#phrase').css('left', '-1000px');
     $('#phrase').text(bundle[1]);
-    //bundle[2].play();
+    var left = Math.floor((Math.random() * ($('body').width() - $('#phrase').width() - 10)));
+    var top = Math.floor((Math.random() * ($('body').height() - $('#phrase').height())) - 15);
+    $('#phrase').css('left', left + 'px');
+    $('#phrase').css('top', top + 'px');
+
+    bundle[2].play();
   }
 
 
