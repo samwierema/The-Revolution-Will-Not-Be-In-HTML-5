@@ -1,4 +1,5 @@
 body {
+  background-color: black;
   font-family: "Helvetica";
 }
 
@@ -11,6 +12,29 @@ div#content {
   top: 0;
   left: 0;
   z-index: 2;
+}
+
+div#introduction {
+  margin: 0 auto;
+  font-family: 'Old Standard TT', sans-serif;
+  font-size: 64px;
+  color: white;
+}
+
+div#introduction span.smaller {
+  padding-top: -10px;
+  font-size: 42px;
+}
+
+div#introduction a {
+  color: white;
+  text-decoration: none;
+}
+
+div#title {
+  font-family: 'Old Standard TT', serif;
+  font-size: 4em;
+  color: white;
 }
 
 img.bg {
