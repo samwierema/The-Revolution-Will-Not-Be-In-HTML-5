@@ -43,8 +43,8 @@ var Revolution = function() {
     that.audio.load();
     $(that.audio).bind('play', that.fire_audio_phrases);
     
-    //that.audio.controls = 'controls';
-    //$('#player').append(that.audio);
+    that.audio.controls = 'controls';
+    $('#player').append(that.audio);
     that.audio.play();
   };
 
@@ -73,7 +73,12 @@ var Revolution = function() {
     var bundle = that.audio_phrases[position];
     $('img.revolution' + position).fadeOut('slow');
     $('img.revolution' + (position+1)).fadeIn('slow');
+    $('#phrase').css('left', '-1000px');
     $('#phrase').text(bundle[1]);
+    var left = Math.floor((Math.random() * ($('body').width() - $('#phrase').width() - 10)));
+    var top = Math.floor((Math.random() * ($('body').height() - $('#phrase').height())) - 15);
+    $('#phrase').css('left', left + 'px');
+    $('#phrase').css('top', top + 'px');
     bundle[2].play();
   }
 
