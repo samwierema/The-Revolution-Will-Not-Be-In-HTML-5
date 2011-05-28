@@ -109,8 +109,7 @@ var Revolution = function() {
     var left = Math.floor((Math.random() * ($('body').width() - 200)));
     var top = Math.floor((Math.random() * ($('body').height() - 200)));
    
-    position = position % that.tweets.length; 
-    var tweet = that.tweets[position];
+    var tweet = that.tweets[position % that.tweets.length];
     $('#content').append($('<div>')
                      .attr({
                        id: 'tweet_' + position,
