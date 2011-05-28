@@ -106,7 +106,7 @@ var Revolution = function() {
   };
 
   that.show_tweet = function(position) {
-    var left = Math.floor((Math.random() * ($('body').width() - 200)));
+    var left = Math.floor((Math.random() * ($('body').width() - 250)));
     var top = Math.floor((Math.random() * ($('body').height() - 200)));
    
     var tweet = that.tweets[position % that.tweets.length];
