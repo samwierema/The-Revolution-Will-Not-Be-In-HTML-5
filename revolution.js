@@ -12,7 +12,10 @@ var Revolution = function() {
   }
 
   that.preload_music = function() {
-    // load mp3 on an audio tag
+	  var audio = document.createElement('audio');
+    audio.src = 'audio/the-revolution-will-not-be-televized.mp3';
+    audio.preload = 'auto';
+    audio.play();
   }
 
   that.preload_mp3s = function() {
