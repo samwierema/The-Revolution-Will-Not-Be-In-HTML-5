@@ -1,7 +1,33 @@
-html {
-  background: url(http://farm4.static.flickr.com/3380/4623984022_264c623238_b.jpg) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+.hidden {
+  display: none;
+}
+
+div#content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+img.bg {
+  z-index: 1;
+  /* Set rules to fill background */
+  min-height: 100%;
+  min-width: 1024px;
+  
+  /* Set up proportionate scaling */
+  width: 100%;
+  height: auto;
+  
+  /* Set up positioning */
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 1024px) { /* Specific to this particular image */
+  img.bg {
+    left: 50%;
+    margin-left: -512px;   /* 50% */
+  }
 }

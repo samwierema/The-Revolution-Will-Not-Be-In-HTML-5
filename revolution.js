@@ -16,16 +16,15 @@ var Revolution = function() {
     $.getJSON('http://api.flickr.com/services/rest/?method=flickr.galleries.getPhotos&api_key=53fc02bccf3f3dfd4c135ed595f688e0&gallery_id=25241199-72157626699534155&format=json&nojsoncallback=1', function(data) {
       that.images = [];
       $.each(data.photos.photo, function(key, photo) {
-        that.images.push('http://farm' + photo.farm  + '.static.flickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_b.jpg');
+        var image = 'http://farm' + photo.farm  + '.static.flickr.com/' + photo.server + '/' + photo.id + '_' + photo.secret + '_b.jpg';
+        that.images.push(image);
+        $('<img />').attr('src', image).addClass('hidden bg revolution' + key).load(function() {
+          if(key == 0) {
+            $(this).removeClass('hidden');
+          }
+          $('body').append($(this));
+        });
       });
-      var i = 0;
-      var interval_id = window.setInterval(function() {
-        $('html').css('background','url(' + that.images[i] + ') no-repeat center center fixed');
-        if((i+1) == that.images.length) {
-          window.clearInterval(interval_id);
-        }
-        i++;
-      }, 2000);
     });
   }
 
@@ -37,7 +36,7 @@ var Revolution = function() {
     
     that.audio.controls = 'controls';
     $('#player').append(that.audio);
-    that.audio.play();
+    //that.audio.play();
   };
 
   that.preload_mp3s = function() {
@@ -64,7 +63,7 @@ var Revolution = function() {
   that.fire_phrase = function(position) {
     var bundle = that.audio_phrases[position];
     $('#phrase').text(bundle[1]);
-    bundle[2].play();
+    //bundle[2].play();
   }
 
 
