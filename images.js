@@ -29,7 +29,8 @@ images = [
   'http://www.bbc.co.uk/blogs/zanelowe/gil.jpg',
   'http://images.wax.fm/gil_scott_heron_mind_of_gil_scott_heron-AL8301-1248714238.jpeg',
   'http://www.designagency.co.uk/media/1237/gil-scott-heron.jpg',
-  'http://2.bp.blogspot.com/_EE0X5QXrrzY/TI98-DMHepI/AAAAAAAAAc0/GXEs-VzcAVQ/s1600/Gil+Scott+Heron-0029.jpg',
+  'http://farm6.static.flickr.com/5257/5473704479_0024c6d982_b.jpg',
+  //'http://2.bp.blogspot.com/_EE0X5QXrrzY/TI98-DMHepI/AAAAAAAAAc0/GXEs-VzcAVQ/s1600/Gil+Scott+Heron-0029.jpg',
   'http://www.crisdecuba.com/obama/images/wallpapers/obama-daughter-03-124244.jpeg',
   'http://www.vashtie.com/blog/wp-content/uploads/2011/02/jan_26_gil_scott_heron.jpg'
 ];

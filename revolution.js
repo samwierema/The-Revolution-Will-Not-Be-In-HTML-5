@@ -19,7 +19,7 @@ var Revolution = function() {
     that.preload_images();
     that.preload_music();
     that.preload_mp3s();
-    that.preload_tweets();
+    //that.preload_tweets();
   }
   
   that.preload_images = function() {
@@ -39,7 +39,7 @@ var Revolution = function() {
     that.audio.load();
     $(that.audio).bind('play', function() {
       that.fire_audio_phrases();
-      that.fire_tweets();
+      //that.fire_tweets();
     });
     
     // that.audio.controls = 'controls';
@@ -52,7 +52,7 @@ var Revolution = function() {
     that.audio_phrases = [];
     for(var i = 0; i < lyrics.length; i++) {
       var timestamp = lyrics[i][0];
-      var phrase = lyrics[i][1]
+      var phrase = lyrics[i][1];
       var a = document.createElement('audio');
       a.src = 'http://translate.google.com/translate_tts?tl=en&q=' + escape(phrase);
       a.load();
