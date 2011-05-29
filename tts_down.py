@@ -31,4 +31,13 @@ lyrics = [
   [3000, "The revolution will not be televised, will not be televised, will not be televised, will not be televised."],
   [4000, "The revolution will be no re-run brothers;"],
   [4000, "The revolution will be live."]
-];
+]
+
+import urllib2
+
+for l in lyrics:
+  url = 'http://translate.google.com/translate_tts?tl=en&q=' + escape(phrase); 
+  request = urllib2.Request(url)
+  f = urllib2.urlopen(request)
+  f.read()
+

@@ -19,7 +19,7 @@ var Revolution = function() {
     that.preload_images();
     that.preload_music();
     that.preload_mp3s();
-    //that.preload_tweets();
+    that.preload_tweets();
   }
   
   that.preload_images = function() {
@@ -39,11 +39,11 @@ var Revolution = function() {
     that.audio.load();
     $(that.audio).bind('play', function() {
       that.fire_audio_phrases();
-      //that.fire_tweets();
+      that.fire_tweets();
     });
     
-    //that.audio.controls = 'controls';
-    //$('#player').append(that.audio);
+    // that.audio.controls = 'controls';
+    // $('#player').append(that.audio);
     that.audio.play();
   };
 
@@ -81,7 +81,7 @@ var Revolution = function() {
     bundle[2].play();
   }
 
-  /*that.preload_tweets = function() {
+  that.preload_tweets = function() {
     that.tweets = [];
     $.getJSON('http://search.twitter.com/search.json?q=revolution&rpp=100&callback=?', function(data) {
       that.tweets = data.results;
@@ -116,7 +116,7 @@ var Revolution = function() {
                      .html(tweet.text + ' by @' + tweet.from_user));
    
     setTimeout("$('#tweet_" + position + "').fadeOut('slow')", 5000);
-  };*/
+  };
 
   return that;
 };
